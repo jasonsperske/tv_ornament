@@ -13,10 +13,10 @@ def play_video(video):
 	filename = yt.default_filename
 	print filename
 	newfilename = filename.replace(" ", "")
-	newfilename.replace("/", "")
-	newfilename.replace("'", "")
-	newfilename.replace("(", "")
-	newfilename.replace(")", "")
+	newfilename = newfilename.replace("/", "")
+	newfilename = newfilename.replace("'", "")
+	newfilename = newfilename.replace("(", "")
+	newfilename = newfilename.replace(")", "")
 	checkfile = newfilename
 	print checkfile
 	if (os.path.isfile(checkfile) == False):
