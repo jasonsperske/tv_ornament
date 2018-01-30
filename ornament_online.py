@@ -15,6 +15,8 @@ def play_video(video):
 	newfilename = filename.replace(" ", "")
 	newfilename.replace("/", "")
 	newfilename.replace("'", "")
+	newfilename.replace("(", "")
+	newfilename.replace(")", "")
 	checkfile = newfilename
 	print checkfile
 	if (os.path.isfile(checkfile) == False):
